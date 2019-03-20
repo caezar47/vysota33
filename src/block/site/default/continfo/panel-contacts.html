@@ -1,0 +1,30 @@
+<div class="{{block_prefix}}block  {{block_mod}}">
+	<div class="{{block_prefix}}item   {{block_mod}}  is--addr">
+		<div class="{{block_prefix}}item-icon  {{block_mod}}  is--addr">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-address" ]]</div>
+		<div class="{{block_prefix}}item-heading  {{block_mod}}  is--addr">Отдел продаж</div>
+		<div class="{{block_prefix}}item-name  {{block_mod}}  is--addr">{{contacts.address}}</div>
+	</div>
+
+	<a href="tel:{{contacts.phone_tel}}" class="{{block_prefix}}item   {{block_mod}}">
+		<div class="{{block_prefix}}item-icon  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-tel" ]]</div>
+		<div class="{{block_prefix}}item-name  {{block_mod}}">{{contacts.phone}}</div>
+	</a>
+	<div class="{{block_prefix}}item   {{block_mod}}">
+		<div class="{{block_prefix}}item-icon  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-time" ]]</div>
+		<div class="{{block_prefix}}item-heading  {{block_mod}}">График работы</div>
+		<div class="{{block_prefix}}item-name  {{block_mod}}">{{contacts.clock}}</div>
+	</div>		
+	<div class="{{block_prefix}}item  is--btn   {{block_mod}}">		
+		[[azbntple 
+			tpl="/src/block/site/default/button/btn-modal.html"
+			button_prefix="btn__" 
+			button_mod="  "
+			button_target="modal-order"
+			button_name="Оставить заявку" 
+		]]
+	</div>
+	<div class="{{block_prefix}}item  is--text   {{block_mod}}">
+		<p>Застройщик ООО «Вереск».</p>
+		<p>Проектная декларация на сайте <a href="http://monostroy33.ru/" target="_blank">monostroy33.ru</a></p>
+	</div>
+</div>

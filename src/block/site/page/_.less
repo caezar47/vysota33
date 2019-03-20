@@ -1,0 +1,388 @@
+.content-block__{
+	&panel{	
+		position: relative;
+		overflow: hidden;
+		&.is--index-project{
+			background-image: linear-gradient(0deg, #c3c3c3 0%, #9bcbd5 100%, #19233f 100%);
+		}
+		&.is--index-adv{
+			background-image: linear-gradient(45deg, #1b1f3a 0%, #0d8fc5 100%);
+		}
+		&.is--index-apartments-premises{
+			background-image: linear-gradient(90deg, #a1c6ce 0%, #bcbebf 100%);	
+		}
+		&.is--index-parking{
+			background-image: linear-gradient(90deg, #1b1f3a 0%, #0d8fc5 100%);	
+		}
+		&.is--index-shopping{
+			margin-bottom: 35px;
+			@media @media-point-screen {
+				margin-bottom: 2.9vw;
+			}
+		}
+		&.is--index-progress{
+			//background-image: linear-gradient(0deg, #9dcbd7 0%, #1b2541 0%, #0d8bc1 100%);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+	&container{	
+		position: relative;
+		z-index: 5;
+		@media print{padding: 0!important}		
+		padding-top: 40px;
+		padding-bottom: 40px;
+		@media @media-point-screen {
+			padding-top: 3.2vw;
+			padding-bottom: 5.2vw;
+		}
+		&.is--full{
+			@media @media-point-smart {
+				min-height: ~"calc(100vh - @{navbar_xs})";
+			}
+			@media @media-point-sm {
+				min-height: ~"calc(100vh - @{navbar_sm} - @{footer_device_sm_p})";
+			}
+			@media @media-point-md1 {
+				min-height: ~"calc(100vh - @{navbar_sm} - @{footer_device_sm_l})";
+			}
+			@media @media-point-screen {					
+				min-height: ~"calc(100vh - @{navbar_screen} -  @{footer_screen})";
+			}
+			@media @media-point-md2 {
+				min-height: ~"calc(100vh - @{navbar_md} - @{footer_screen_md})";
+			}
+			@media @media-point-lg {
+				min-height: ~"calc(100vh - @{navbar_lg} - @{footer_screen_lg} )"; 
+			}
+			@media @media-point-xxl {
+				min-height: ~"calc(100vh - @{navbar_xxl} -  @{footer_screen_xxl})"; 
+			}			
+			body.is--navbar_bottom &{
+				@media @media-point-sm {
+					min-height: ~"calc(100vh - @{navbar_sm} - @{footer_device_sm_p} - @{navbar_bottom})";
+				}
+				@media @media-point-md1 {
+					min-height: ~"calc(100vh - @{navbar_sm} - @{footer_device_sm_l} -  @{navbar_bottom})";
+				}
+				@media @media-point-md2 {	
+					min-height: ~"calc(100vh - @{navbar_md} - @{footer_screen_md} - @{navbar_bottom_tabs} - @{navbar_bottom})"; 
+				}
+			}
+		}
+		&.is--p0{
+			padding-top: 0;
+			padding-bottom: 0;
+			min-height: inherit;
+		}
+		&.is--pt0{
+			padding-top: 0;
+		}
+		&.is--pb0{
+			padding-bottom: 0;
+		}
+		&.is--overflow{
+			overflow: hidden;
+			position: relative;
+		}
+		//index page
+		&.is--index{}
+		&.is--index-project{
+			@media @media-point-screen {
+				padding-top: 3.8vw;
+			}
+		}
+		&.is--index-adv-text{
+			@media @media-point-screen {
+				padding-top: 3.9vw;
+				padding-bottom: 1.3vw;
+			}
+		}
+		&.is--index-adv{
+			@media @media-point-screen {
+				padding-top: 4.7vw;
+				padding-bottom: 6vw;
+			}
+		}
+		&.is--index-apartments{
+			@media @media-point-screen {
+				padding-top: 4.7vw;
+				padding-bottom: 1.9vw;
+			}
+		}
+		&.is--index-premises{
+			@media @media-point-screen {
+				padding-top: 1.9vw;
+				padding-bottom: 5.6vw;
+			}
+		}
+		&.is--index-parking{
+			@media @media-point-screen {
+				padding-top: 4.1vw;
+				padding-bottom: 4.7vw;
+			}
+		}
+		&.is--index-shopping{
+			padding-bottom: 10px;
+			@media @media-point-screen {
+				padding-top: 3.6vw;
+				padding-bottom: 1.55vw;
+			}
+		}
+		&.is--index-progress{
+			@media @media-point-screen {
+				padding-top: 4.7vw;
+				padding-bottom: 4.3vw;
+			}
+		}
+		&.is--index-contacts{
+			@media @media-point-screen {
+				padding-top: 4vw;
+				padding-bottom: 4.6vw;
+			}
+		}
+	}
+	&elem{
+		margin-bottom: 35px;
+		@media @media-point-screen { margin-bottom: 3.5vw; }
+		&.is--xs{
+			margin-bottom: 20px;			
+		}
+		&.is--sm{
+			margin-bottom: 25px;
+			@media @media-point-screen { margin-bottom: 2.5vw; }
+		}
+		&.is--lg{
+			margin-bottom: 30px;
+			@media @media-point-screen { margin-bottom: 3vw;}
+		}
+		&.is--posr{
+			position: relative;
+		}
+		&.is--hidden{
+			overflow: hidden;
+		}
+		&.is--center{
+			text-align: center;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+		//block		
+		&.is--index-project{
+			position: relative;
+			padding: 15px;
+			max-width: 650px;
+			border-left: 3px solid @primary;
+			border-bottom: 3px solid @primary;
+			&::before,
+			&::after{
+				content: '';
+				position: absolute;
+				background-color: @primary;
+			}
+			&::before{
+				top: 0;
+				left: 0px;
+				height: 3px;
+				width: 51%;
+			}
+			&::after{
+				bottom: 0;
+				right: 0px;
+				width: 3px;
+				height: 5%;
+			}
+			@media @media-point-notsmart {
+				padding: 30px 30px 30px 23px;
+				border-left: 7px solid @primary;
+				border-bottom: 7px solid @primary;
+				&::before{
+					height: 7px;
+				}
+				&::after{
+					width: 7px;
+				}				
+			}
+		}
+		&.is--index-apartments{
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		&.is--index-premises{
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		&.is--index-parking{
+			position: relative;
+		}
+		&.is--index-contacts{
+			position: relative;
+		}
+	}
+	&group{
+		&.is--index-apartments{
+			background-color: fadeout(#1b1f3a, 20%);
+			max-width: 520px;
+			min-width: 350px;
+			width: 28vw;
+			color: @white;
+			padding: 20px 25px;
+			font-weight: 700;
+			@media @media-point-screen {
+				padding: 25px 1.4vw 25px 2.55vw;
+			}
+		}
+		&.is--index-premises{
+			background-color: fadeout(#1b1f3a, 20%);
+			max-width: 520px;
+			min-width: 350px;
+			width: 28vw;
+			color: @white;
+			padding: 20px 25px;
+			font-weight: 700;
+			margin-left: auto;
+			@media @media-point-screen {
+				padding: 25px 1.4vw 25px 4vw;
+			}
+		}
+		&.is--index-parking{
+			background-color: fadeout(#1b1f3a, 20%);
+			color: @white;
+			font-weight: 700;
+			padding: 25px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			@media @media-point-screen {
+				padding: 2.45vw;
+			}
+		}
+	}
+	&row{
+	}		  
+	&cols{
+		//page
+		&.is--index-parking{
+			@media @media-point-notsmart {
+				.makeCols(5.5, 12);
+			}
+		}
+	}
+	&heading{
+		h2&{
+			margin-bottom: 30px;
+			@media @media-point-screen {
+				margin-bottom: 2.2vw;
+			}			
+		}
+		h3&{
+			margin-bottom: 25px;
+			@media @media-point-screen {
+				margin-bottom: 1.8vw;
+			}			
+		}
+		h4&{
+			margin-bottom: 20px;
+			@media @media-point-screen {
+				margin-bottom: 1.4vw;
+			}
+		}
+		h5&{
+			font-weight: 700;
+			margin-bottom: 15px;
+			@media @media-point-screen {
+				margin-bottom: 1vw;
+			}
+		}
+		&.is--center{
+			text-align: center;
+		}
+	}
+	&text{
+		&.is--center{
+			text-align: center;
+		}	
+		//block	
+		&.is--index-project{
+			background-color: @primary;
+			color: @white;
+			padding: 20px;
+			@media @media-point-screen {
+				padding: 2.75vw 2.75vw 2.2vw;
+			}
+			&.text__block{
+				p,div{
+					margin-bottom: 30px;
+					&:last-child{
+						margin-bottom: 0
+					}
+				}
+				* + h5{padding-top: 0}
+			}
+		}
+		&.is--index-adv-text{
+			font-weight: 700;
+			max-width: 420px;
+			padding-top: 3px;
+			&.text__block{
+				@media @media-point-notsmart {
+					font-size: @b-fs + 2;
+					line-height: @b-lh + 5;					
+				}
+				p,div{
+					margin-bottom: 35px;
+					&:last-child{
+						margin-bottom: 0
+					}
+				}
+			}
+		}
+		&.is--index-apartments{
+			margin-bottom: 20px;
+		}
+	}
+	&preview{
+		&.is--index-parking{
+			max-height: 505px;
+			min-height: 305px;
+			height: 28vw;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&.is--index-shopping{
+		}
+	}
+	&slick{
+	}
+	&slick-item{
+		&.is--gallery{
+			padding: 0 15px;
+		}
+	}
+	&btn{
+		padding-top: 35px;
+		&.is--pt0{
+			padding-top: 0;
+		}
+		&.is--center{
+			text-align: center;
+		} 
+		//block
+		&.is--index-apartments{
+			padding-top: 10px;
+		}
+		&.is--index-premises{
+			padding-top: 20px;
+		}
+	}
+	&item{
+	}
+}

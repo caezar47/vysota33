@@ -1,0 +1,172 @@
+<nav class="{{navbar_prefix}}block  {{navbar_mod}}" data-scrollto="navbar">
+	<div class="{{navbar_prefix}}inner">
+		<div class="{{navbar_prefix}}header">
+			<div class="{{navbar_prefix}}container container  is--header">
+				<div class="{{navbar_prefix}}header-row row ">
+					<div class="{{navbar_prefix}}header-cols cols  is--hamburger">
+						<div class="{{navbar_prefix}}hamburger">
+							<button class="{{navbar_prefix}}hamburger-card" data-scrollto="humb" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site" data-body="html" data-collapse-nav=".navbar__collapse">
+								<span class="{{navbar_prefix}}hamburger-card-inner">
+									<span class="{{navbar_prefix}}hamburger-card-line  is--left"></span>
+									<span class="{{navbar_prefix}}hamburger-card-line  is--center"></span>
+									<span class="{{navbar_prefix}}hamburger-card-line  is--right"></span>
+								</span>
+							</button>
+						</div>
+					</div>
+					<div class="{{navbar_prefix}}header-cols cols  is--logotip">
+						<a class="{{navbar_prefix}}logotip" href="{{page.index}}">
+							[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="logotip" ]]
+						</a>
+					</div>
+					<div class="{{navbar_prefix}}header-cols cols  is--tel">
+						[[azbntple 
+							tpl="/src/block/site/default/continfo/panel-navbar-header.html" 
+							block_prefix="continfo__" 
+							block_mod="is--navbar-header" 
+						]]
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="{{navbar_prefix}}collapse" >
+			<div class="{{navbar_prefix}}collapse-inner">
+				<div class="{{navbar_prefix}}collapse-panel  is--top">
+					<div class="{{navbar_prefix}}container  container  is--collapse">
+						<div class="{{navbar_prefix}}collapse-row row">
+							<div class="{{navbar_prefix}}collapse-cols cols  is--addr">	
+								[[azbntple 
+									tpl="/src/block/site/default/continfo/elem-scrollto.html" 
+									block_prefix="continfo__" 
+									block_mod="is--navbar-top"
+									block_link="#{{block.contacts}}" 
+									block_name="Отдел продаж" 
+									block_icon="icon-location" 
+									block_scrollto="scrollto" 
+									block_attr="  "  
+								]]	
+								[[azbntple 
+									tpl="/src/block/site/default/continfo/elem.html" 
+									block_prefix="continfo__" 
+									block_mod="is--navbar-top  is--addr"
+									block_name="{{contacts.address}}" 
+								]]	
+								[[azbntple 
+									tpl="/src/block/site/default/continfo/elem-scrollto.html" 
+									block_prefix="continfo__" 
+									block_mod="is--navbar-top"
+									block_link="#{{block.contacts}}" 
+									block_name="Высота на карте" 
+									block_icon="icon-map" 
+									block_scrollto="scrollto" 
+									block_attr="  " 
+								]]
+							
+							</div>	
+							<div class="{{navbar_prefix}}collapse-cols cols  is--tel">
+								[[azbntple 
+									tpl="/src/block/site/default/continfo/elem-icon.html" 
+									block_prefix="continfo__" 
+									block_mod="is--navbar-top  is--tel"
+									block_link="tel:{{contacts.phone_tel}}" 
+									block_name="{{contacts.phone}}" 
+									block_icon="contacts-tel" 
+									block_scrollto="scrollto" 
+									block_attr="  " 
+								]]	
+							
+							</div>	
+							<div class="{{navbar_prefix}}collapse-cols cols  is--btn">
+								[[azbntple 
+									tpl="/src/block/site/default/button/btn-modal.html"
+									button_prefix="btn__" 
+									button_mod="  "
+									button_target="modal-order"
+									button_name="Оставить заявку" 
+								]]
+							</div>				
+						</div>				
+					</div>				
+				</div>
+				<div class="{{navbar_prefix}}collapse-panel  is--bottom">
+					<div class="{{navbar_prefix}}container  container  is--collapse">
+						<ul class="{{navbar_prefix}}nav">	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item-scrollto.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="О&nbsp;проекте" 
+								navbar_link="#{{block.project}}"
+								navbar_scrollto="scrollto"
+								navbar_mod="is--active"
+								navbar_attr="data-scrollto-diff='{{block.diff}}'"
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item-scrollto.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="Преимущества" 
+								navbar_link="#{{block.adv}}"
+								navbar_scrollto="scrollto"
+								navbar_mod="  "
+								navbar_attr="data-scrollto-diff='{{block.diff}}'"
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item-scrollto.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="Апартаменты" 
+								navbar_link="#{{block.apartments}}"
+								navbar_scrollto="scrollto"
+								navbar_mod="  "
+								navbar_attr="data-scrollto-diff='{{block.diff}}'"
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item-scrollto.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="Коммерческие помещения" 
+								navbar_link="#{{block.premises}}"
+								navbar_scrollto="scrollto"
+								navbar_mod="  "
+								navbar_attr="data-scrollto-diff='{{block.diff}}'"
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item-scrollto.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="Cтруктура центра" 
+								navbar_link="#{{block.structure}}"
+								navbar_scrollto="scrollto"
+								navbar_mod="  "
+								navbar_attr="data-scrollto-diff='{{block.diff}}'"
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item-scrollto.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="О&nbsp;застройщике" 
+								navbar_link="#{{block.about}}"
+								navbar_scrollto="scrollto"
+								navbar_mod="  "
+								navbar_attr="data-scrollto-diff='{{block.diff}}'"
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item-scrollto.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="Ход строительства" 
+								navbar_link="#{{block.progress}}"
+								navbar_scrollto="scrollto"
+								navbar_mod="  "
+								navbar_attr="data-scrollto-diff='{{block.diff}}'"
+							]]	
+							[[azbntple 
+								tpl="/src/block/site/default/navbar/item-scrollto.html" 
+								navbar_prefix="navbar__" 
+								navbar_name="Контакты" 
+								navbar_link="#{{block.contacts}}"
+								navbar_scrollto="scrollto"
+								navbar_mod="  "
+								navbar_attr="data-scrollto-diff='{{block.diff}}'"
+							]]	
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

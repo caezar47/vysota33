@@ -1,0 +1,60 @@
+<header class="{{block_prefix}}block">
+	<div class="{{block_prefix}}slick" data-slider-slick="slick-header">
+		<div class="{{block_prefix}}slick-item">
+			<img src="{{url-path-img}}/temp/bg-block-header.jpg" class="img-responsive" alt="">
+		</div>
+	</div>
+	<div class="{{block_prefix}}container container">
+		<div class="{{block_prefix}}logotip"><img src="{{url-path-img}}/default/logotip.png" alt=""></div>
+		<h1 class="{{block_prefix}}heading">{{block_heading}}</h1>
+		<div class="{{block_prefix}}row  grid__row">
+			<div class="grid__cols">
+				[[azbntple 
+					tpl="/src/block/site/default/adv/card.html"
+					block_prefix="adv__" 
+					block_mod="is--header"
+					block_preview="icon-adv"
+					block_count="01"
+					block_val="15"
+					block_heading="Количество этажей"
+				]] 
+			</div>
+			<div class="grid__cols">
+				[[azbntple 
+					tpl="/src/block/site/default/adv/card.html"
+					block_prefix="adv__" 
+					block_mod="is--header"
+					block_preview="icon-adv"
+					block_count="02"
+					block_val="17.7 <small>тыс. м<sup>2</sup></small>"
+					block_heading="Общая площадь помещений"
+				]] 
+			</div>
+			<div class="grid__cols">
+				[[azbntple 
+					tpl="/src/block/site/default/adv/card.html"
+					block_prefix="adv__" 
+					block_mod="is--header"
+					block_preview="icon-adv"
+					block_count="03"
+					block_val="193"
+					block_heading="Количество апартаментов"
+				]] 
+			</div>
+			<div class="grid__cols">
+				[[azbntple 
+					tpl="/src/block/site/default/adv/card.html"
+					block_prefix="adv__" 
+					block_mod="is--header"
+					block_preview="icon-adv"
+					block_count="04"
+					block_val="650 <small>м<sup>2</sup></small>"
+					block_heading="Площадь коммерческих помещений"
+				]] 
+			</div>
+		</div>
+		<a href="#block-project" data-scrollto-diff='{{block.diff}}' class="{{block_prefix}}scrollto scrollto">
+			[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-scroll" ]]
+		</a>
+	</div>
+</header>

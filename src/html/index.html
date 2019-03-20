@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple 
+			tpl="/src/block/site/default/head/.html" 
+			title=" "
+			description=" "
+		]] 		
+	</head>
+	<body class="is--index-page">
+		[[azbntple 
+			tpl="/src/block/site/default/navbar/navbar.html"
+			navbar_prefix="navbar__"
+			navbar_mod="is--scroll  is--index"
+		]] 
+		[[azbntple 
+			tpl="/src/block/site/default/header/panel.html"
+			block_prefix="header-block__"
+			block_heading="Покоряя новую высоту"
+		]]	
+		[[azbntple  
+			tpl="/src/block/site/page/index-project.html"
+			content_prefix="content-block__"
+			content_mod="is--index-project"
+			content_id="{{block.project}}"
+
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading_num="01"
+			block_heading="О проекте"
+		]]
+		[[azbntple  
+			tpl="/src/block/site/page/index-adv-text.html"
+			content_prefix="content-block__"
+			content_mod="is--index-adv-text"
+			content_id="{{block.adv}}"
+
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading_num="02"
+			block_heading="Одно из значимых преимуществ АДЦ «Высота» - это его расположение."
+		]]
+		[[azbntple  
+			tpl="/src/block/site/page/index-adv.html"
+			content_prefix="content-block__"
+			content_mod="is--index-adv"
+			content_id="{{block.adv}}"
+
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading_num="03"
+			block_heading="Преимущества"
+		]]
+		<div class="content-block__panel  is--index-apartments-premises">
+			[[azbntple  
+				tpl="/src/block/site/page/index-apartments.html"
+				content_prefix="content-block__"
+				content_mod="is--index-apartments"
+				content_id="{{block.apartments}}"
+
+				block_heading_mod="is--index-heading"
+				block_heading_level="h2"
+				block_heading_num="04"
+				block_heading="Апартаменты"
+			]]
+			[[azbntple  
+				tpl="/src/block/site/page/index-premises.html"
+				content_prefix="content-block__"
+				content_mod="is--index-premises"
+				content_id="{{block.premises}}"
+
+				block_heading_mod="is--index-heading"
+				block_heading_level="h2"
+				block_heading_num="05"
+				block_heading="Коммерческие помещения"
+			]]
+		</div>
+		[[azbntple  
+			tpl="/src/block/site/page/index-parking.html"
+			content_prefix="content-block__"
+			content_mod="is--index-parking"
+			content_id="{{block.parking}}"
+
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading_num="06"
+			block_heading="Паркинг"
+		]]
+		[[azbntple  
+			tpl="/src/block/site/page/index-shopping.html"
+			content_prefix="content-block__"
+			content_mod="is--index-shopping"
+			content_id="{{block.shopping}}"
+
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading_num="08"
+			block_heading="Что можно открыть в ТЦ Высота"
+		]]
+		[[azbntple  
+			tpl="/src/block/site/page/index-progress.html"
+			content_prefix="content-block__"
+			content_mod="is--index-progress"
+			content_id="{{block.progress}}"
+
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading_num="09"
+			block_heading="Ход строительства"
+		]]
+		[[azbntple  
+			tpl="/src/block/site/page/index-contacts.html"
+			content_prefix="content-block__"
+			content_mod="is--index-contacts"
+			content_id="{{block.contacts}}"
+
+		]]
+
+		[[azbntple 
+			tpl="8/src/block/site/default/footer/footer.html"
+			footer_prefix="footer__" 
+		]]
+		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/2gisMap.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/script.html" ]]
+	</body>
+</html>
