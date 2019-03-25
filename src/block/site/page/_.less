@@ -14,6 +14,9 @@
 		&.is--index-parking{
 			background-image: linear-gradient(90deg, #1b1f3a 0%, #0d8fc5 100%);	
 		}
+		&.is--index-structure{
+			background-image: linear-gradient(180deg, #9bcbd6 0%, #c4c4c3 100%);
+		}
 		&.is--index-shopping{
 			margin-bottom: 35px;
 			@media @media-point-screen {
@@ -91,6 +94,7 @@
 		&.is--index-project{
 			@media @media-point-screen {
 				padding-top: 3.8vw;
+				padding-bottom: 3.8vw;
 			}
 		}
 		&.is--index-adv-text{
@@ -121,6 +125,12 @@
 			@media @media-point-screen {
 				padding-top: 4.1vw;
 				padding-bottom: 4.7vw;
+			}
+		}
+		&.is--index-structure{
+			@media @media-point-screen {
+				padding-top: 5vw;
+				padding-bottom: 2vw;
 			}
 		}
 		&.is--index-shopping{
@@ -198,6 +208,7 @@
 				padding: 30px 30px 30px 23px;
 				border-left: 7px solid @primary;
 				border-bottom: 7px solid @primary;
+				margin-bottom: 3.9vw;
 				&::before{
 					height: 7px;
 				}
@@ -219,6 +230,12 @@
 		&.is--index-parking{
 			position: relative;
 		}
+		&.is--index-structure{
+			@media @media-point-notsmart {
+				margin-top: -9.4vw;
+				text-align: right;
+			}
+		}
 		&.is--index-contacts{
 			position: relative;
 		}
@@ -226,25 +243,29 @@
 	&group{
 		&.is--index-apartments{
 			background-color: fadeout(#1b1f3a, 20%);
-			max-width: 520px;
-			min-width: 350px;
-			width: 28vw;
 			color: @white;
 			padding: 20px 25px;
 			font-weight: 700;
+			@media @media-point-notsmart {
+				max-width: 520px;
+				min-width: 350px;
+				width: 28vw;				
+			}
 			@media @media-point-screen {
 				padding: 25px 1.4vw 25px 2.55vw;
 			}
 		}
 		&.is--index-premises{
 			background-color: fadeout(#1b1f3a, 20%);
-			max-width: 520px;
-			min-width: 350px;
-			width: 28vw;
 			color: @white;
 			padding: 20px 25px;
 			font-weight: 700;
 			margin-left: auto;
+			@media @media-point-notsmart {
+				max-width: 520px;
+				min-width: 350px;
+				width: 28vw;				
+			}
 			@media @media-point-screen {
 				padding: 25px 1.4vw 25px 4vw;
 			}
@@ -381,6 +402,12 @@
 		}
 		&.is--index-premises{
 			padding-top: 20px;
+		}
+		&.is--index-structure{
+			padding-top: 0px;
+			@media @media-point-notsmart {
+				padding-left: 3.2vw;
+			}
 		}
 	}
 	&item{

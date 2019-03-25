@@ -38,12 +38,12 @@
 							</button>
 						</div>
 					</div>
-					<div class="navbar__header-cols cols  is--logotip">
-						<a class="navbar__logotip" href="/">
+					<div class="navbar__header-cols cols  is--logotip ">
+						<div class="navbar__logotip" >
 							<svg class="icon-svg icon-logotip" role="img">
 	<use xlink:href="/img/svg/sprite.svg#logotip"></use>
 </svg>
-						</a>
+						</div>
 					</div>
 					<div class="navbar__header-cols cols  is--tel">
 						<a href="tel:+74922222231" class="continfo__item   is--navbar-header">
@@ -63,8 +63,8 @@
 							<div class="navbar__collapse-cols cols  is--addr">	
 								<div class="continfo__elem  is--navbar-top">
 	<a href="#block-contacts" class="continfo__item   is--navbar-top  scrollto" data-scrollto="nav-item"   >
-		<span class="continfo__item-icon  is--navbar-top"><svg class="icon-svg icon-icon-location" role="img">
-	<use xlink:href="/img/svg/sprite.svg#icon-location"></use>
+		<span class="continfo__item-icon  is--navbar-top"><svg class="icon-svg icon-contacts-address" role="img">
+	<use xlink:href="/img/svg/sprite.svg#contacts-address"></use>
 </svg></span>
 		<span class="continfo__item-name  is--navbar-top">Отдел продаж</span>
 	</a>
@@ -104,7 +104,7 @@
 				<div class="navbar__collapse-panel  is--bottom">
 					<div class="navbar__container  container  is--collapse">
 						<ul class="navbar__nav">	
-							<li class="navbar__nav-item  is--active">
+							<li class="navbar__nav-item    ">
 	<a href="#block-project" class="navbar__nav-link  scrollto" data-scrollto="nav-item" data-scrollto-diff='-56'><span>О&nbsp;проекте</span></a>  
 </li>	
 							<li class="navbar__nav-item    ">
@@ -135,7 +135,7 @@
 		</div>
 	</div>
 </nav> 
-		<header class="header-block__block">
+		<header class="header-block__block" id="block-header">
 	<div class="header-block__slick" data-slider-slick="slick-header">
 		<div class="header-block__slick-item">
 			<img src="/img/temp/bg-block-header.jpg" class="img-responsive" alt="">
@@ -202,6 +202,59 @@
 		<div class="bg-block__card  is--index-project">
 	<img src="/img/temp/bg-block-project.jpg" class="img-responsive" alt="">
 </div>
+		<section id="slider" class="project-slider__block">
+	<input type="radio" name="slider" id="s1" class="project-slider__input">
+	<input type="radio" name="slider" id="s2" class="project-slider__input">
+	<input type="radio" name="slider" id="s3" class="project-slider__input">
+	<input type="radio" name="slider" id="s4"  class="project-slider__input" checked>
+	<input type="radio" name="slider" id="s5" class="project-slider__input">
+	<input type="radio" name="slider" id="s6" class="project-slider__input">
+	<input type="radio" name="slider" id="s7" class="project-slider__input">
+	<label for="s1" id="slide1" class="project-slider__card  is--project">
+	<div class="project-slider__preview  is--project">
+		<img src="/img/temp/card-project-item1.jpg" alt="Супермаркет" class="project-slider__preview  is--project">
+	</div>
+	<h5 class="project-slider__heading  is--project"><span>Супермаркет</span></h5>
+</label>
+	<label for="s2" id="slide2" class="project-slider__card  is--project">
+	<div class="project-slider__preview  is--project">
+		<img src="/img/temp/card-project-item2.jpg" alt="Фитнес-клуб" class="project-slider__preview  is--project">
+	</div>
+	<h5 class="project-slider__heading  is--project"><span>Фитнес-клуб</span></h5>
+</label>
+	<label for="s3" id="slide3" class="project-slider__card  is--project">
+	<div class="project-slider__preview  is--project">
+		<img src="/img/temp/card-project-item3.jpg" alt="Подземный паркинг" class="project-slider__preview  is--project">
+	</div>
+	<h5 class="project-slider__heading  is--project"><span>Подземный паркинг</span></h5>
+</label>
+	<label for="s4" id="slide4" class="project-slider__card  is--project">
+	<div class="project-slider__preview  is--project">
+		<img src="/img/temp/card-project-item4.jpg" alt="Апартаменты" class="project-slider__preview  is--project">
+	</div>
+	<h5 class="project-slider__heading  is--project"><span>Апартаменты</span></h5>
+</label>
+	<label for="s5" id="slide5" class="project-slider__card  is--project">
+	<div class="project-slider__preview  is--project">
+		<img src="/img/temp/card-project-item5.jpg" alt="Коммерческие помещения" class="project-slider__preview  is--project">
+	</div>
+	<h5 class="project-slider__heading  is--project"><span>Коммерческие помещения</span></h5>
+</label>
+	<label for="s6" id="slide6" class="project-slider__card  is--project">
+	<div class="project-slider__preview  is--project">
+		<img src="/img/temp/card-project-item6.jpg" alt="Гостевая парковка" class="project-slider__preview  is--project">
+	</div>
+	<h5 class="project-slider__heading  is--project"><span>Гостевая парковка</span></h5>
+</label>
+	<label for="s7" id="slide7" class="project-slider__card  is--project">
+	<div class="project-slider__preview  is--project">
+		<img src="/img/temp/card-project-item7.jpg" alt="Ресторан" class="project-slider__preview  is--project">
+	</div>
+	<h5 class="project-slider__heading  is--project"><span>Ресторан</span></h5>
+</label>
+	<button type="button" id="prev1" class="project-slider__btn  is--prev"></button>
+	<button type="button" id="next2" class="project-slider__btn  is--next"></button>
+</section> 
 	</div>
 </div> 
 		<div class="content-block__panel  is--index-adv-text"  id="block-adv">
@@ -453,6 +506,279 @@
 		</div>			
 	</div>
 </div> 
+		<div class="content-block__panel  is--index-structure" id="block-structure">
+	<div class="content-block__container container  is--index-structure">	
+		<div class="page-header__panel  is--index-heading">
+	<h2 data-num="07" class="page-header__heading  is--index-heading">Структура центра</h2>		
+</div>
+ 	
+		<div class="content-block__btn  is--index-structure">
+			<button type="button" class="btn__item  is--invers" data-toggle="modal" data-target="#modal-order">
+	<span class="btn__name">Оставить заявку</span>
+</button>
+		</div>
+		<div class="content-block__elem  is--index-structure">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 995 1130" class="svg__block" width="995" height="1130">
+	<g>
+		<image width="995" height="1130" href="/img/temp/bg-block-structure.png"/>
+	</g>
+	<g>
+		<g>		
+			<path class="svg__floor" d="M198 1025C196.95 1024.3 197 967 197 967L303 965L399 963L490 965L618 964L933 973L933 1045M933 1045C933 1045 694.4 1058 692 1058C670.9 1058 513 1063 513 1063C513 1063 373.89 1048.7 198 1025M202 1025" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,84.763,965.604)" >
+					<tspan x="0" y="0" class="svg__note-num">1</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,985.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,1017.227)" >
+					<tspan x="0" y="0" class="svg__note-small">кафе/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">супермаркет </tspan>
+				</text>
+				<path class="svg__note-line" d="M65,995h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M193 968C193.36 956.75 192.48 901 193 901C201.61 901 294 893 294 893L407 885L619 890L943 897L943 976M943 976C943 976 253.73 966.6 194 968M194 968" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,84.763,908.604)" >
+					<tspan x="0" y="0" class="svg__note-num">2</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,928.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,960.227)" >
+					<tspan x="0" y="0" class="svg__note-small">фитнес/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">клуб</tspan>
+				</text>
+				<path class="svg__note-line" d="M65,938h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M204 864C202.95 863.31 204 812 204 812L318 795L352 790L415 785L738 804L933 812L933 859M933 859C933 859 748.64 855.66 738 855C716.94 853.69 415 841 415 841C415 841 303.05 850.03 203 864M202 852" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,86.763,803.604)" >
+					<tspan x="0" y="0" class="svg__note-num">3</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,823.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,856.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M65,833h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M203 811C203.05 809.58 203 760 203 760L313 745L352 739L415 730L738 749L933 757L933 812M933 812C933 812 746.64 804.66 736 804C714.94 802.7 415 785 415 785C415 785 303.05 797.03 203 811M202 797" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,86.763,748.604)" >
+					<tspan x="0" y="0" class="svg__note-num">4</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,768.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,801.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M65,778h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M203 761C203.05 759.58 203.91 714.4 203.91 714.4C245.98 701.84 375.6 684.66 415 675L737 700L933 713L933 757M933 757C933 757 746.64 749.66 736 749C714.94 747.7 415 730 415 730C415 730 303.05 747.03 203 761M202 742" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,86.763,693.604)" >
+					<tspan x="0" y="0" class="svg__note-num">5</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,713.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,746.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M65,723h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M204 714C204.05 712.58 203.91 665.4 203.91 665.4C245.98 652.84 375.6 635.66 415 626L736 659L933 671L933 713M933 713C933 713 746.64 700.66 736 700C714.94 698.69 415 676 415 676C415 676 400.69 678.01 391 680C352.28 687.25 289.48 698.42 203 714M202 693" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,86.763,661.604)" >
+					<tspan x="0" y="0" class="svg__note-num">6</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,681.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,714.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M65,691h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M204 666C204.05 664.58 204 622 204 622C246.07 609.44 373.61 585.66 413 576L736 611L933 625L933 671M933 671C933 671 745.63 659.73 735 659C711.5 657.39 412 628 412 628C412 628 400.69 630.01 391 632C352.28 639.25 289.48 650.42 203 666M202 645" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,86.763,617.604)" >
+					<tspan x="0" y="0" class="svg__note-num">7</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,637.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,670.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M65,647h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M204 626C204.05 624.58 204 586 204 586C246.07 573.44 373.61 534.66 413 525L735 566L933 581L933 625M933 625C933 625 744.63 612.07 734 611C710.57 608.64 412 577 412 577C412 577 400.69 579.01 391 581C352.28 588.25 291.62 604.87 203 626M202 594" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,86.763,590.604)" >
+					<tspan x="0" y="0" class="svg__note-num">8</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,610.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,643.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M65,620h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M204 586C204.05 584.58 204 538 204 538C246.07 525.44 373.61 486.66 413 477L733 515L909 525L909 573M909 573C909 573 744.63 567.07 734 566C710.57 563.64 412 529 412 529C412 529 400.69 531.01 391 533C352.28 540.25 281.38 564.87 203 586M202 546" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,86.763,542.604)" >
+					<tspan x="0" y="0" class="svg__note-num">9</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,562.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,595.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M65,572h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M204 538C204.05 536.58 204 500 204 500C248.59 483.48 373.61 435.66 413 426L732 473L908 481L909 525M909 525C909 525 743.63 519.07 733 518C709.57 515.64 412 478 412 478C412 478 400.69 480.01 391 482C371.3 488.5 318.04 504.45 323 503C327.96 501.55 247.58 526.25 204 538" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,72.763,491.604)" >
+					<tspan x="0" y="0" class="svg__note-num">10</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,511.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,544.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M65,521h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M204 500C204.05 498.58 204 460 204 460C248.59 443.48 373.61 385.66 413 376L732 423L908 436L908 480M908 480C908 480 742.63 474.07 732 473C708.57 470.64 413 425 413 425C413 425 383.74 434.1 369 439C345.17 447.79 320.04 456.45 325 455C329.96 453.55 249.57 482.83 204 500" />
+			<g class="svg__note">
+				<text style="transform: matrix(1,0,0,1,72.763,441.604)" >
+					<tspan x="0" y="0" class="svg__note-num">11</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,76.373,461.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(0.306,0,0,0.306,100.373,494.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M65,471h66v-3h-66z" />
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M223 414C223 414 222.84 401.14 223 401C226.33 398.09 291.42 369.15 291.42 369.15L311.78 372.54L414 330L595.7 355.59L611.54 349.94L731 373L731 381L793.65 391.75L793 428L732 423L607 405M607 405L514.26 391.75C514.26 391.75 416.86 376.88 414 376C412.84 375.64 395.84 381.51 376 389C347 399.95 312 414 312 414L292 423L203.19 459.55L203.19 423.39L223.55 414.35" />
+			<g class="svg__note">
+				<text style="transform: matrix(0.306,0,0,0.306,90.373,481.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M57,456h66v-3h-66z" />
+				<text style="transform: matrix(0.306,0,0,0.306,70.373,446.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(1,0,0,1,65.763,426.604)" >
+					<tspan x="0" y="0" class="svg__note-num">12</tspan>
+				</text>
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M223 365C223 365 222.84 352.14 223 352C226.33 349.09 291.42 320.15 291.42 320.15L311.78 323.54L414 281L595 310L612 305L735 327L734.83 332.58L793.65 342.75L793 392C793 392 745.41 384.04 730 381C729.92 380.98 730 373 730 373C730 373 720.81 371.33 719 371C701.03 367.68 612 350 612 350M612 350C612 350 596.55 356.21 595 356C581.45 354.18 514 344 514 344C514 344 416.86 331.88 414 331C412.84 330.64 396.47 336.13 372 347C341.2 360.68 312 372 312 372L292 369C292 369 241.16 390.98 223 400C221.06 400.96 223.73 414.17 222 415C210.66 420.43 203 423 203 423L203.19 374.39L223.55 365.35" />
+			<g class="svg__note">
+				<text style="transform: matrix(0.306,0,0,0.306,90.373,432.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M57,407h66v-3h-66z" />
+				<text style="transform: matrix(0.306,0,0,0.306,70.373,397.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(1,0,0,1,65.763,377.604)" >
+					<tspan x="0" y="0" class="svg__note-num">13</tspan>
+				</text>
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M224 315C224 315 245.24 305.16 252 302C267 294.98 293 283 293 283L314 285L414 240C414 240 549.06 262.05 592 271C592.08 271.02 591.88 281.3 592 283C592.04 283.57 612 275 612 275L661 283L733 296L765 301L793 305L793 344C793 344 745.41 336.04 730 333C729.92 332.98 730 326 730 326C730 326 719.81 324.33 718 324C700.03 320.68 612 305 612 305M612 305C612 305 597.55 310.21 596 310C582.45 308.18 509 296 509 296C509 296 416.86 282.88 414 282C412.84 281.64 395.28 288.36 368 300C334.61 314.25 313 324 313 324L292 320C292 320 234.73 345.79 223 352C222.21 352.42 223.42 365.82 223 366C211.49 370.98 203 375 203 375L203.19 324.39L224 315" />
+			<g class="svg__note">
+				<text style="transform: matrix(0.306,0,0,0.306,90.373,384.227)" >
+					<tspan x="0" y="0" class="svg__note-small">апартаменты/</tspan>
+					<tspan x="0" y="65.806" class="svg__note-small">коммерческие </tspan>
+					<tspan x="0" y="131.612" class="svg__note-small">помещения</tspan>
+				</text>
+				<path class="svg__note-line" d="M57,359h66v-3h-66z" />
+				<text style="transform: matrix(0.306,0,0,0.306,70.373,349.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(1,0,0,1,65.763,329.604)" >
+					<tspan x="0" y="0" class="svg__note-num">14</tspan>
+				</text>
+			</g>
+		</g>
+		<g>
+			<path class="svg__floor" d="M203.19,324.55l89.36,-41.81l19.23,3.39c0,0 100.08,-47.21 102.93,-46.33c2.86,0.88 99.54,16.95 99.54,16.95l78.05,14.69c0,0 0.01,1.5 0,11.3c6.16,-1.71 22.62,-7.91 22.62,-7.91l116.51,20.34l62.21,10.17v-48.59l-58.82,-10.17l1.13,-7.91l-125.97,-26.67c0,0 -13.59,6.07 -14,6c-28.86,-5.05 -83,-17 -83,-17c0,0 0.01,-59.94 0,-61c-0.03,-2.13 -98,-25 -98,-25c0,0 -58.21,28.49 -58,34c1.65,43.39 2.82,63.13 3,63c16.17,-11.99 -48.22,25.55 -48.22,25.55l-20.36,-3.39l-71.42,37.84c0,0 -0.88,4.4 0.16,5.09c2.96,1.95 3.39,2.26 3.39,2.26l-20.36,9.04z" />
+			<g class="svg__note">
+				<text style="transform: matrix(0.306,0,0,0.306,90.373,329.227)" >
+					<tspan x="0" y="0" class="svg__note-small">ресторан</tspan>
+				</text>
+				<path class="svg__note-line" d="M57,304h66v-3h-66z" />
+				<text style="transform: matrix(0.306,0,0,0.306,70.373,294.227)" >
+					<tspan x="0" y="0" class="svg__note-heading">этаж</tspan>
+				</text>
+				<text style="transform: matrix(1,0,0,1,65.763,274.604)" >
+					<tspan x="0" y="0" class="svg__note-num">15</tspan>
+				</text>
+			</g>
+		</g>
+	</g>
+</svg>
+		</div>
+	</div>
+</div>
 		<div class="content-block__panel  is--index-shopping" id="block-shopping">
 	<div class="content-block__container container  is--index-shopping">	
 		<div class="page-header__panel  is--index-heading">
@@ -637,28 +963,140 @@
 		</div>
 	</div>
 </div> 
+		<footer class="footer__block">	
+	<div class="footer__inner">	
+		<div class="footer__container container">
+			<div class="footer__row  grid__row  ">
+				<div class="grid__cols">
+					<a href="/" class="footer__logotip">
+						<img src="/img/default/logotip.png" alt="">
+					</a>
+					<div class="footer__text">
+						<p>О собственнике – <a href="http://monostroy33.ru/" target="_blink">monostroy33.ru</a></p>
+						<p>Застройщик ООО «Вереск». Проектная декларация на сайте <a href="http://monostroy33.ru/" target="_blink">monostroy33.ru</a></p>
+					</div>
+				</div>
+				<div class="grid__cols">
+					<ul class="footer__nav">
+						<li class="footer__nav-item  is--heading">Меню</li>
+						<li class="footer__nav-item">
+							<a href="#block-project" class="footer__nav-link  scrollto" data-scrollto-diff='-56'>О&nbsp;проекте</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#block-adv" class="footer__nav-link  scrollto" data-scrollto-diff='-56'>Преимущества</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#block-apartments" class="footer__nav-link  scrollto" data-scrollto-diff='-56'>Апартаменты</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#block-premises" class="footer__nav-link  scrollto" data-scrollto-diff='-56'>Коммерческие помещения</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#block-structure" class="footer__nav-link  scrollto" data-scrollto-diff='-56'>Cтруктура центра</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#block-about" class="footer__nav-link  scrollto" data-scrollto-diff='-56'>О&nbsp;застройщике</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#block-progress" class="footer__nav-link  scrollto" data-scrollto-diff='-56'>Ход строительства</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="/img/temp/docs-test.jpg" data-fancybox="docs" class="footer__nav-link">Документы</a>
+							<a href="/img/temp/docs-test.jpg" data-fancybox="docs"></a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#block-contacts" class="footer__nav-link  scrollto" data-scrollto-diff='-56'>Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="grid__cols">									
+					<div class="continfo__block  is--footer">
+	<div class="continfo__item-heading  is--footer">Контакты</div>
 
-		
-		<div class="modal__block modals  fade    " id="modal-message" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal__dialog    ">
-		<div class="modal__body    " >
+	<div class="continfo__group   is--footer"> 		
+		<a href="#block-contacts" class="continfo__item  is--link   is--footer  scrollto" data-scrollto-diff='-56'>
+			<span class="continfo__item-icon  is--footer"><svg class="icon-svg icon-contacts-address" role="img">
+	<use xlink:href="/img/svg/sprite.svg#contacts-address"></use>
+</svg></span>
+			<span class="continfo__item-name  is--footer">Отдел продаж</span>
+		</a>
+		<div class="continfo__item  is--addr   is--footer">
+			г. Владимир, Суздальский пр-т, 13
+		</div>
+	</div>
+	<div class="continfo__group   is--footer"> 
+		<div class="continfo__item   is--footer">
+			<span class="continfo__item-icon  is--footer"><svg class="icon-svg icon-contacts-time" role="img">
+	<use xlink:href="/img/svg/sprite.svg#contacts-time"></use>
+</svg></span>
+			<span class="continfo__item-name  is--footer"><p>ПН-ЧТ с 9:00 до 18:00</p><p>ПТ до 16:45</p></span>
+		</div>
+	</div>
+	<div class="continfo__group   is--footer"> 
+		<a href="#block-contacts" class="continfo__item  is--link   is--footer  scrollto" data-scrollto-diff='-56'>
+			<span class="continfo__item-icon  is--footer"><svg class="icon-svg icon-icon-map" role="img">
+	<use xlink:href="/img/svg/sprite.svg#icon-map"></use>
+</svg></span>
+			<span class="continfo__item-name  is--footer">Высота на карте</span>
+		</a>
+	</div>
+	<div class="continfo__group   is--footer"> 
+		<a href="tel:+74922222231" class="continfo__item  is--link   is--footer">
+			<span class="continfo__item-icon  is--footer"><svg class="icon-svg icon-contacts-tel" role="img">
+	<use xlink:href="/img/svg/sprite.svg#contacts-tel"></use>
+</svg></span>
+			<span class="continfo__item-name  is--footer">8 (4922) 22-22-31</span>
+		</a>
+	</div>
+</div>
+				</div>
+				<div class="grid__cols  is--full">								
+					<div class="social__block  is--footer">
+	<div class="social__row row  is--footer">
+		<div class="social__cols cols  is--footer">
+			<a href="https://vk.com/" class="social__item  is--vk  is--footer" target="_blank"><svg class="icon-svg icon-soc-vk" role="img">
+	<use xlink:href="/img/svg/sprite.svg#soc-vk"></use>
+</svg></a>
+		</div>
+		<div class="social__cols cols  is--footer">
+			<a href="https://www.facebook.com/" class="social__item  is--fb  is--footer" target="_blank"><svg class="icon-svg icon-soc-fb" role="img">
+	<use xlink:href="/img/svg/sprite.svg#soc-fb"></use>
+</svg></a>
+		</div>
+		<div class="social__cols cols  is--footer">
+			<a href="https://www.instagram.com/" class="social__item  is--inst  is--footer" target="_blank"><svg class="icon-svg icon-soc-inst" role="img">
+	<use xlink:href="/img/svg/sprite.svg#soc-inst"></use>
+</svg></a>
+		</div>
+	</div>
+</div>
+					<p>© Высота 2018. Все права защищены.</p>
+					<p><a href="#" data-toggle="modal" data-target="#modal-agreement" class="footer__link">Политика конфиденциальности.</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+		<div class="modal__block modals  fade  is--message" id="modal-message" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog  is--message">
+		<div class="modal__body  is--message" >
 			<button type="button" class="modal__btn-close  modal-close" data-dismiss="modal" aria-hidden="true">
 				<svg class="icon-svg icon-modal-close" role="img">
 	<use xlink:href="/img/svg/sprite.svg#modal-close"></use>
 </svg>
 			</button>
-			<div class="modal__content    ">
-				<div class="page-header__group  is--h4  align--center">
-	<div class="page-header__panel  is--h4  align--center">
-	<h4 class="page-header__heading  is--h4  align--center"><span>Ваше сообщение успешно отправлено!</span></h4>	
-	<div class="page-header__heading-small  is--h4  align--center">Мы свяжемся с вами в ближайшее время.</div>		
+			<div class="modal__content  is--message">
+				<div class="page-header__group  is--h4  is--ff-2  align--center">
+	<div class="page-header__panel  is--h4  is--ff-2  align--center">
+	<h4 class="page-header__heading  is--h4  is--ff-2  align--center"><span>Ваше сообщение успешно отправлено!</span></h4>	
+	<div class="page-header__heading-small  is--h4  is--ff-2  align--center">Мы свяжемся с вами в ближайшее время.</div>		
 </div>
 </div>	
 			</div> 
 		</div>
 	</div>
 </div>
-<div class="modal__block  modals  fade    " id="modal-defaul-form" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal__block  modals  fade    " id="modal-order" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal__dialog    ">
 		<div class="modal__body    " >
 			<button type="button" class="modal__btn-close  modal-close" data-dismiss="modal" aria-hidden="true">
@@ -667,48 +1105,76 @@
 </svg>
 			</button>
 			<div class="modal__content    ">
-				<div class="form__block    "  >
-	<div class="page-header__group  is--h4  align--center">
-	<div class="page-header__panel  is--h4  align--center">
-	<h4 class="page-header__heading  is--h4  align--center"><span>Рассчитать стоимость</span></h4>	
-	<div class="page-header__heading-small  is--h4  align--center">Мы перезвоним вам в ближайшее время</div>		
+				<div class="form__block  is--modal"  >
+	<div class="page-header__group  is--h4  is--ff-2  is--order  color--white">
+	<div class="page-header__panel  is--h4  is--ff-2  is--order  color--white">
+		<h4  class="page-header__heading  is--h4  is--ff-2  is--order  color--white">Узнай, как покорить новую высоту</h4>		
+	</div>
 </div>
-</div>
-	<form action="#" class="form__panel    "  >
+	<form action="#" class="form__panel  is--modal"  >
 		<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
-		<input type="hidden" name="f[Форма: Рассчитать стоимость]">
-		<div class="form__row row    ">
-			<div class="form__cols cols  is--name    ">
-				<div class="form__item      is--name">
-	<input type="text"     class="form__control form-control validate[required, custom[onlyLetterSp]]      {    is--name" id="name[name]" name="f[Имя]" placeholder="Имя">
+		<input type="hidden" name="f[Форма: Узнай, как покорить новую высоту]">
+		<div class="form__row row  is--aic  is--modal">
+			<div class="form__cols cols  is--modal">
+				<div class="form__item  is--modal  is--name">
+	<input type="text"     class="form__control form-control validate[required, custom[onlyLetterSp]]  is--modal  {    is--name" id="name[name]" name="f[Имя]" placeholder="Имя">
 </div>
 			</div>
-			<div class="form__cols cols  is--tel    ">
-				<div class="form__item      is--tel">
-	<input type="tel"     class="form__control form-control validate[required, custom[phone]]      {    is--tel" id="tel[tel]" name="f[Номер телефона]" placeholder="Номер телефона">
+			<div class="form__cols cols  is--avatar  is--modal">
+				<div class="form__avatar  is--modal">
+					<div class="form__avatar-preview  is--modal">
+						<img src="/img/temp/form-avatar.jpg" alt="">
+					</div>
+					<div class="form__avatar-name  is--modal">Ваш персональный менеджер, Анна</div>
+				</div>
+			</div>
+			<div class="form__cols cols  is--tel  is--modal">
+				<div class="form__item  is--modal  is--tel">
+	<input type="tel"     class="form__control form-control validate[required, custom[phone]]  is--modal  {    is--tel" id="tel[tel]" name="f[Номер телефона]" placeholder="Номер телефона">
 </div>
 			</div>
-			<div class="form__cols cols  is--email    ">
-				<div class="form__item      is--email">
-	<input type="email"     class="form__control form-control validate[required, custom[email]]      {    is--email" id="email[email]" name="f[E-mail]" placeholder="E-mail">
-</div>
-			</div>
-			<div class="form__cols cols  is--btn    ">
-				<button type="submit" class="btn__item    ">
-	<span class="btn__name">Отправить заявку</span>
+			<div class="form__cols cols  is--btn  is--modal">
+				<button type="submit" class="btn__item  is--invers">
+	<span class="btn__name">Получить консультацию</span>
 </button>				
 			</div>
-			<div class="form__cols cols  is--agreement    ">
-				<div class="form__item  is--agreement        ">
+			<div class="form__cols cols  is--agreement  is--modal">
+				<div class="form__item  is--agreement  is--modal    ">
 	<input type="hidden" name="f[Согласие на обработку персональных данных]" value="Да">
-	<div class="form__text  is--agreement        ">	
-		Нажимая на кнопку «Отправить заявку», Вы соглашаетесь с правилами обработки <a href='/agreement.html' target='_blank'>персональных данных</a>
+	<div class="form__text  is--agreement  is--modal    ">	
+		Нажимая на кнопку «Получить консультацию», Вы соглашаетесь с правилами обработки <a href='#' data-toggle='modal' data-target='#modal-agreement'>персональных данных</a>
 	</div>	
 </div>		
 			</div>
 		</div>	
 	</form> 
+</div> 
+			</div> 
+		</div>
+	</div>
 </div>
+<div class="modal__block modals  fade    " id="modal-agreement" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal__dialog    ">
+		<div class="modal__body    " >
+			<button type="button" class="modal__btn-close  modal-close" data-dismiss="modal" aria-hidden="true">
+				<svg class="icon-svg icon-modal-close" role="img">
+	<use xlink:href="/img/svg/sprite.svg#modal-close"></use>
+</svg>
+			</button>
+			<div class="modal__content    ">
+				<div class="page-header__group  is--h4  is--ff-2  align--center">
+	<div class="page-header__panel  is--h4  is--ff-2  align--center">
+	<h4 class="page-header__heading  is--h4  is--ff-2  align--center"><span>Политика конфиденциальности сайта</span></h4>	
+	<div class="page-header__heading-small  is--h4  is--ff-2  align--center">  </div>		
+</div>
+</div>	
+				<div class="text__block  color--white">
+					<p>Данная Политика конфиденциальности применима к&nbsp;данному Сайту. После просмотра данного Сайта обязательно прочитайте текст, содержащий политику конфиденциальности используемого сайта. В&nbsp;случае несогласия с&nbsp;данной Политикой конфиденциальности прекратите использование данного Сайта. Заполнив любую из&nbsp;форм и&nbsp;используя данный Сайт, Вы&nbsp;тем самым выражаете согласие с&nbsp;условиями изложенной ниже Политики конфиденциальности. Сайт охраняет конфиденциальность посетителей сайта. Персональная информация Для того чтобы оказывать вам услуги, отвечать на&nbsp;вопросы, выполнять ваши пожелания и&nbsp;требования требуется такая информация, как ваше имя и&nbsp;номер телефона. «ВЫСОТА» может использовать указанную информацию для ответов на&nbsp;запросы, а&nbsp;также для связи с&nbsp;Вами по&nbsp;телефону с&nbsp;целью предоставления информации о&nbsp;предлагаемых «ВЫСОТОЙ» услугах и&nbsp;рекламных кампаниях. При поступлении от&nbsp;вас обращения в&nbsp;виде отправки любой заполненной на&nbsp;сайте формы «ВЫСОТА» может потребоваться связаться с&nbsp;Вами для получения дополнительной информации, необходимой для вашего обслуживания и&nbsp;ответа на&nbsp;интересующие вопросы. «ВЫСОТА» обязуется не&nbsp;передавать данную информацию третьим лицам без Вашего разрешения, за&nbsp;исключением информации, необходимой для выполнения вашего обслуживания. Со&nbsp;своей стороны, Вы&nbsp;предоставляете «ВЫСОТЕ» право использовать любую сообщённую Вами информацию для выполнения указанных выше действий.</p>
+					<h3>Безопасность</h3>
+					<p>Передача персональных данных в&nbsp;любой форме (лично, по&nbsp;телефону или через Интернет) всегда связана с&nbsp;определенным риском, поскольку не&nbsp;существует абсолютно надежных (защищенных от&nbsp;злонамеренных посягательств) систем, однако «ВЫСОТА» принимает необходимые адекватные меры для минимизации риска и&nbsp;предотвращения несанкционированного доступа, несанкционированного использования и&nbsp;искажения Ваших персональных данных. Несовершеннолетние "ВЫСОТА«не принимает никакой информации от&nbsp;лиц моложе 18&nbsp;лет без согласия их&nbsp;родителей или законных опекунов. Кроме того, лица моложе 18&nbsp;лет не&nbsp;могут совершать каких-либо юридических действий на&nbsp;данном Сайте без согласия родителей или законных опекунов, если это не&nbsp;допускается законодательством Российской Федерации.</p>
+					<p>Модификация</p>
+					<p>«ВЫСОТА» имеет право изменять данную Политику конфиденциальности, изменять и&nbsp;корректировать условия доступа или запрещать доступ к&nbsp;сайту, а&nbsp;также изменять его содержание в&nbsp;любое время без предварительного уведомления.</p>
+				</div> 
 			</div> 
 		</div>
 	</div>
@@ -725,6 +1191,15 @@
 <script>
 svg4everybody();
 document.createElement("picture");
+
+var $buoop = {required:{e:-2,f:-2,o:-2,s:-1,c:-2},insecure:true,api:2019.02 }; 
+function $buo_f(){ 
+	var e = document.createElement("script"); 
+	e.src = "//browser-update.org/update.min.js"; 
+	document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
 </script> 
 	</body>
 </html>

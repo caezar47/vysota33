@@ -1,6 +1,6 @@
 <div class="{{block_prefix}}block  {{block_mod}}"  >
 	[[azbntple 
-		tpl="/src/block/site/default/page-header/panel-group.html"
+		tpl="/src/block/site/default/page-header/panel-heading.html"
 		block_prefix="page-header__" 
 		block_mod="{{block_heading_mod}}"
 		block_heading_level="{{block_heading_level}}"
@@ -11,8 +11,8 @@
 	<form action="#" class="{{block_prefix}}panel  {{block_mod}}"  >
 		<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
 		<input type="hidden" name="f[Форма: {{block_heading}}]">
-		<div class="{{block_prefix}}row row  {{block_mod}}">
-			<div class="{{block_prefix}}cols cols  is--name  {{block_mod}}">
+		<div class="{{block_prefix}}row row  is--aic  {{block_mod}}">
+			<div class="{{block_prefix}}cols cols  {{block_mod}}">
 				[[azbntple 
 					tpl="/src/block/site/default/form/elem-input-custom.html"
 					form_id="{{block_id}}"
@@ -28,6 +28,14 @@
 					block_label="Имя"
 					block_placeholder="Имя"
 				]]
+			</div>
+			<div class="{{block_prefix}}cols cols  is--avatar  {{block_mod}}">
+				<div class="{{block_prefix}}avatar  {{block_mod}}">
+					<div class="{{block_prefix}}avatar-preview  {{block_mod}}">
+						<img src="{{url-path-img}}/temp/form-avatar.jpg" alt="">
+					</div>
+					<div class="{{block_prefix}}avatar-name  {{block_mod}}">Ваш персональный менеджер, Анна</div>
+				</div>
 			</div>
 			<div class="{{block_prefix}}cols cols  is--tel  {{block_mod}}">
 				[[azbntple 
@@ -46,24 +54,6 @@
 					block_placeholder="Номер телефона"
 				]]
 			</div>
-			<div class="{{block_prefix}}cols cols  is--email  {{block_mod}}">
-				[[azbntple 
-					tpl="/src/block/site/default/form/elem-input-custom.html"
-					form_id="{{block_id}}"
-					block_id="email"
-					block_prefix="{{block_prefix}}"
-					block_mod="{{block_mod}}"
-					block_mod_elem="is--email"
-					block_color="{{block_color}}"
-					block_type="email"
-					block_attr="  "
-					block_required="required"
-					block_required_custom="email"
-					block_label="E-mail"
-					block_placeholder="E-mail"
-					block_icon="form-email"
-				]]
-			</div>
 			<div class="{{block_prefix}}cols cols  is--btn  {{block_mod}}">
 				[[azbntple 
 					tpl="/src/block/site/default/button/btn.html"
@@ -80,9 +70,9 @@
 					block_mod="{{block_mod}}"
 					block_mod_elem="  "
 					block_color="{{block_color}}"
-					block_text="Нажимая на кнопку «{{block_btn_name}}», Вы соглашаетесь с правилами обработки <a href='{{page.agreement}}' target='_blank'>персональных данных</a>"
+					block_text="Нажимая на кнопку «{{block_btn_name}}», Вы соглашаетесь с правилами обработки <a href='#' data-toggle='modal' data-target='#modal-agreement'>персональных данных</a>"
 				]]		
 			</div>
 		</div>	
 	</form> 
-</div>
+</div> 

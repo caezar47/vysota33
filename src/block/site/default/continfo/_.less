@@ -15,7 +15,13 @@
 			@media @media-point-screen {
 				padding: 2vw;
 			}
-
+		}
+		&.is--footer{
+			@media @media-point-screen {
+				padding-top: 30px;
+				max-width: 260px;
+	    		margin: 0 auto;
+			}
 		}
 	}
 	&row{		
@@ -67,12 +73,23 @@
 			margin-bottom: 0!important;
 		}
 	}
+	&group{
+		&.is--footer{
+			margin-bottom: 20px;
+		}
+	}
 	&item{
 		position: relative;
 		padding-left: @continfo_icon_width + 13px;
 		display: inline-block;
 		&, &:focus,&:hover{
 			color: @continfo_color;
+		}
+		&.is--navbar-header{
+			padding-left: 0;
+			width: @continfo_icon_width;
+			height: @continfo_icon_width;
+			display: block;
 		}
 		&.is--navbar-top{
 			font-size: @b-fs - 3;
@@ -126,42 +143,21 @@
 				margin-bottom: 15px;
 			}
 		}
-		//old
-		&.is--contacts{
-			font-weight: 400;
-			padding-top: 5px;
-			padding-bottom: 5px;
-			margin-bottom: 5px;		
-		}
-		&.is--navbar{			
-			font-size: @b-fs + 6;
-			line-height: @b-lh + 2;
-			white-space: nowrap;
-			@media @media-point-screen-lg {
-				font-size: @b-fs + 2;
-				line-height: @b-lh + 2;	
-			}
-		}
-		&.is--navbar-header{
-			display: block;
-			padding: 0;
-			width: @continfo_icon_width;
-			height: @continfo_icon_width;
-		}
 		&.is--footer{
-			&,
-			a[href^="mailto:"]&,
-			a[href^="mailto:"]&:focus,
-			a[href^="mailto:"]&:hover, 
-			a[href^="tel:"]&, 
-			a[href^="tel:"]&:focus, 
-			a[href^="tel:"]&:hover{
-				color: @white;
+			padding-left: @continfo_icon_width + 5px;
+			font-weight: 700;
+			color: @white;
+			&.is--link{
+				.hover-line(fadeout(@white, 50%));
+				&::after{
+					left: @continfo_icon_width + 5px;
+					bottom: -5px;
+				}
 			}
-			@media @media-point-smart {padding-left: 0;}			
-		}
-		&.is--noicon{
-			padding-left: 0;
+			&.is--addr{
+				margin-top: 10px;
+				padding-left: 0;
+			}
 		}
 	}
 	&item-heading{
@@ -176,6 +172,13 @@
 				font-size: @b-fs;
 				line-height: @b-lh + 1;				
 			}
+		}
+		&.is--footer{			
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: @b-fs + 2;
+			line-height: @b-lh + 4;
+			margin-bottom: 22px;
 		}
 	}
 	&item-icon{
@@ -201,6 +204,10 @@
 				display: none;
 			}
 		}
+		&.is--navbar-header{
+			width: @continfo_icon_width - 6;
+			height: @continfo_icon_width - 6;
+		}
 		&.is--index-contacts{
 			position: relative;
 			transform: translateY(0%);
@@ -214,14 +221,10 @@
 			}
 		}
 
-		//old
 		&.is--footer{
-			@media @media-point-smart { display: none; }
-		}
-		&.is--contacts{
-		}
-		&.is--noicon{
-			display: none;
+			width: @continfo_icon_width - 10;
+			height: @continfo_icon_width - 10;
+			color: @white;			
 		}
 		svg{display: block;}
 	}
@@ -235,6 +238,9 @@
 					margin-right: auto;						
 				}				
 			}
+		}
+		&.is--footer{
+
 		}
 	}
 }

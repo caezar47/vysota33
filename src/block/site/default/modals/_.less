@@ -16,7 +16,7 @@
 		.modal-open &{
 			overflow-x: hidden;
 			overflow-y: auto;
-			@media @media-point-notsmart{overflow-y: hidden;}
+			//@media @media-point-notsmart{overflow-y: hidden;}
 		}		
 		//display: block;
 		//opacity: 1;
@@ -28,7 +28,7 @@
 		width: auto;	
 		margin: 0px;
 		@media @media-point-notsmart {
-			box-shadow: 6px 8px 16px fadeout(@black, 80%);
+			height: 90%;
 		}
 		@media @media-point-tablet 	{
 			width: @modal_width_device;	
@@ -60,21 +60,24 @@
 	}
 	&body {
 		position: relative;
-		background: @white;
-		padding: 35px 40px;
-		@media @media-point-notsmart {			
+		padding: 35px 20px;
+		border: 3px solid @white;
+		background: @primary;
+		@media @media-point-notsmart {	
+			box-shadow: 6px 8px 16px fadeout(@black, 80%);		
 			border-radius: @modal_border_rad;
 		}
 		@media @media-point-tablet{padding: 70px 60px 50px;}
-		@media @media-point-screen{padding: 3.8vw 5vw;}
+		@media @media-point-screen{padding: 2vw 3.8vw;}	
 	}
-	&content{}
+	&content{
+	}
 	&btn-close{
 		.btn-clearfix();
 	    position: absolute;
 	    z-index: 5; 
-		top: 15px;
-		right: 15px;
+		top: 5px;
+		right: 5px;
 	    border-width: @modal_btn_border; 
 	    border-style: solid; 
 	    border-color: @modal_btn_border_color; 
@@ -85,7 +88,11 @@
 		height: @modal_btn_width;
 		padding: 8px;
 		svg{display: block;}
-	   	transition: @trs-site;  	 
+	   	transition: @trs-site; 
+		@media @media-point-notsmart {
+			top: 15px;
+			right: 20px;
+		} 	 
 		&:hover{
 			background-color: @modal_btn_bg_hover;
 			border-color: @modal_btn_border_color_hover;

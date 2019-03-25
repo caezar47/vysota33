@@ -1,18 +1,66 @@
 <footer class="{{footer_prefix}}block">	
 	<div class="{{footer_prefix}}inner">	
 		<div class="{{footer_prefix}}container container">
-			<div class="{{footer_prefix}}row row  is--base">
-				<div class="{{footer_prefix}}cols cols  is--copyright">
+			<div class="{{footer_prefix}}row  grid__row  ">
+				<div class="grid__cols">
 					<a href="{{page.index}}" class="{{footer_prefix}}logotip">
-						[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="logotip" ]]
+						<img src="{{url-path-img}}/default/logotip.png" alt="">
 					</a>
-				</div>				
-				[[azbntple 
-					tpl="/src/block/site/default/continfo/panel-footer.html" 
-					block_prefix="continfo__" 
-					block_mod="is--footer" 
-				]]
-			</div>	
+					<div class="{{footer_prefix}}text">
+						<p>О собственнике – <a href="http://monostroy33.ru/" target="_blink">monostroy33.ru</a></p>
+						<p>Застройщик ООО «Вереск». Проектная декларация на сайте <a href="http://monostroy33.ru/" target="_blink">monostroy33.ru</a></p>
+					</div>
+				</div>
+				<div class="grid__cols">
+					<ul class="{{footer_prefix}}nav">
+						<li class="{{footer_prefix}}nav-item  is--heading">Меню</li>
+						<li class="{{footer_prefix}}nav-item">
+							<a href="#{{block.project}}" class="{{footer_prefix}}nav-link  scrollto" data-scrollto-diff='{{block.diff}}'>О&nbsp;проекте</a>
+						</li>
+						<li class="{{footer_prefix}}nav-item">
+							<a href="#{{block.adv}}" class="{{footer_prefix}}nav-link  scrollto" data-scrollto-diff='{{block.diff}}'>Преимущества</a>
+						</li>
+						<li class="{{footer_prefix}}nav-item">
+							<a href="#{{block.apartments}}" class="{{footer_prefix}}nav-link  scrollto" data-scrollto-diff='{{block.diff}}'>Апартаменты</a>
+						</li>
+						<li class="{{footer_prefix}}nav-item">
+							<a href="#{{block.premises}}" class="{{footer_prefix}}nav-link  scrollto" data-scrollto-diff='{{block.diff}}'>Коммерческие помещения</a>
+						</li>
+						<li class="{{footer_prefix}}nav-item">
+							<a href="#{{block.structure}}" class="{{footer_prefix}}nav-link  scrollto" data-scrollto-diff='{{block.diff}}'>Cтруктура центра</a>
+						</li>
+						<li class="{{footer_prefix}}nav-item">
+							<a href="#{{block.about}}" class="{{footer_prefix}}nav-link  scrollto" data-scrollto-diff='{{block.diff}}'>О&nbsp;застройщике</a>
+						</li>
+						<li class="{{footer_prefix}}nav-item">
+							<a href="#{{block.progress}}" class="{{footer_prefix}}nav-link  scrollto" data-scrollto-diff='{{block.diff}}'>Ход строительства</a>
+						</li>
+						<li class="{{footer_prefix}}nav-item">
+							<a href="{{url-path-img}}/temp/docs-test.jpg" data-fancybox="docs" class="{{footer_prefix}}nav-link">Документы</a>
+							<a href="{{url-path-img}}/temp/docs-test.jpg" data-fancybox="docs"></a>
+						</li>
+						<li class="{{footer_prefix}}nav-item">
+							<a href="#{{block.contacts}}" class="{{footer_prefix}}nav-link  scrollto" data-scrollto-diff='{{block.diff}}'>Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="grid__cols">									
+					[[azbntple 
+						tpl="/src/block/site/default/continfo/panel-footer.html" 
+						block_prefix="continfo__" 
+						block_mod="is--footer" 
+					]]
+				</div>
+				<div class="grid__cols  is--full">								
+					[[azbntple 
+						tpl="/src/block/site/default/social/panel.html" 
+						block_prefix="social__" 
+						block_mod="is--footer" 
+					]]
+					<p>© Высота 2018. Все права защищены.</p>
+					<p><a href="#" data-toggle="modal" data-target="#modal-agreement" class="{{footer_prefix}}link">Политика конфиденциальности.</a></p>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>

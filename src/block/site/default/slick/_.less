@@ -42,6 +42,11 @@
 				padding: 25px 0;
 			}
 		}
+		[data-slider-slick="slick-project"] &{
+			@media @media-point-notsmart {
+				padding: 4vw 0; 
+			}
+		}
 	} 
 	&-track,
 	&-list {
@@ -116,6 +121,18 @@
 				@media @media-point-notsmart {
 					transform: scale(1.15);				
 				}
+			}
+		}
+		[data-slider-slick="slick-project"] &{
+    		position: relative;			
+			&.slick-current{
+				z-index: 5;
+				@media @media-point-notsmart {
+					transform: scale(1.15);				
+				}
+			}
+			&:nth-child(11){
+				transform: translateY(-20%);
 			}
 		}
 	}

@@ -44,6 +44,7 @@
 	},
 	"block":{
 		"diff":"-56",
+		"header":"block-header",
 		"project":"block-project",
 		"adv":"block-adv",
 		"apartments":"block-apartments",

@@ -1,0 +1,50 @@
+.svg__{
+	&block{
+		width: 120%;
+	    height: 129vw;
+	    transform: translateX(-6%);
+		@media @media-point-notsmart {
+			max-width: 995px;
+			width: 52vw;
+			max-height: 1130px;
+			height: 59vw;
+		}
+	}
+	&floor{
+		fill: fadeout(#fffd4a, 100%);
+		transition: @trs-site;
+		&:hover{
+			fill: fadeout(#fffd4a, 50%);
+			cursor: pointer;
+			& + .svg__note{
+				opacity: 1;
+			}
+		}
+	}
+	&note{
+		opacity: 0;
+		transition: @trs-site;
+		&-num{
+			font-family: @b-ff-2;
+			fill: @primary;
+			.calcFontSize(32, 38, 320, 1680);
+			.calcLineHeight(32, 38, 320, 1680);
+		}
+		&-heading{
+			font-family: @b-ff;
+			fill: #1f3c60;
+			.calcFontSize(48, 58, 320, 1680);
+			.calcLineHeight(32, 38, 320, 1680);
+		}
+		&-small{
+			font-family: @b-ff;
+			fill: @default;
+			.calcFontSize(48, 58, 320, 1680);
+			.calcLineHeight(32, 38, 320, 1680);
+			text-anchor: middle;
+		}
+		&-line{
+			fill: @primary;
+		}
+	}
+}

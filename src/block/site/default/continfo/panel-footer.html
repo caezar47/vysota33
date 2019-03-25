@@ -1,18 +1,31 @@
-<div class="{{footer_prefix}}cols cols  is--address  {{block_mod}}">
-	<div class="{{block_prefix}}item   {{block_mod}}">
-		<span class="{{block_prefix}}item-icon  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-address" ]]</span>
-		<span class="{{block_prefix}}item-name  {{block_mod}}">{{contacts.address}}</span>
+<div class="{{block_prefix}}block  {{block_mod}}">
+	<div class="{{block_prefix}}item-heading  {{block_mod}}">Контакты</div>
+
+	<div class="{{block_prefix}}group   {{block_mod}}"> 		
+		<a href="#{{block.contacts}}" class="{{block_prefix}}item  is--link   {{block_mod}}  scrollto" data-scrollto-diff='{{block.diff}}'>
+			<span class="{{block_prefix}}item-icon  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-address" ]]</span>
+			<span class="{{block_prefix}}item-name  {{block_mod}}">Отдел продаж</span>
+		</a>
+		<div class="{{block_prefix}}item  is--addr   {{block_mod}}">
+			{{contacts.address}}
+		</div>
 	</div>
-</div>
-<div class="{{footer_prefix}}cols cols  is--email  {{block_mod}}">
-	<a href="mailto:{{contacts.email}}" class="{{block_prefix}}item   {{block_mod}}">
-		<span class="{{block_prefix}}item-icon  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-email" ]]</span>
-		<span class="{{block_prefix}}item-name  {{block_mod}}">{{contacts.email}}</span>
-	</a>
-</div>
-<div class="{{footer_prefix}}cols cols  is--tel   {{block_mod}}">
-	<a href="tel:{{contacts.phone_tel}}" class="{{block_prefix}}item   {{block_mod}}">
-		<span class="{{block_prefix}}item-icon  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-tel" ]]</span>
-		<span class="{{block_prefix}}item-name  {{block_mod}}">{{contacts.phone}}</span>
-	</a>
+	<div class="{{block_prefix}}group   {{block_mod}}"> 
+		<div class="{{block_prefix}}item   {{block_mod}}">
+			<span class="{{block_prefix}}item-icon  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-time" ]]</span>
+			<span class="{{block_prefix}}item-name  {{block_mod}}">{{contacts.clock}}</span>
+		</div>
+	</div>
+	<div class="{{block_prefix}}group   {{block_mod}}"> 
+		<a href="#{{block.contacts}}" class="{{block_prefix}}item  is--link   {{block_mod}}  scrollto" data-scrollto-diff='{{block.diff}}'>
+			<span class="{{block_prefix}}item-icon  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-map" ]]</span>
+			<span class="{{block_prefix}}item-name  {{block_mod}}">Высота на карте</span>
+		</a>
+	</div>
+	<div class="{{block_prefix}}group   {{block_mod}}"> 
+		<a href="tel:{{contacts.phone_tel}}" class="{{block_prefix}}item  is--link   {{block_mod}}">
+			<span class="{{block_prefix}}item-icon  {{block_mod}}">[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="contacts-tel" ]]</span>
+			<span class="{{block_prefix}}item-name  {{block_mod}}">{{contacts.phone}}</span>
+		</a>
+	</div>
 </div>

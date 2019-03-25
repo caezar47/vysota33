@@ -1,6 +1,14 @@
 .social__{
-	&block{}
+	&block{
+		&.is--footer{
+			margin-bottom: 15px;
+			@media @media-point-screen {
+				margin-bottom: 30px;
+			}
+		}
+	}
 	&row{ 
+		justify-content: center;
 		align-items: center;		
 		margin-left: -(@soc_gutter);
 		margin-right: -(@soc_gutter);
@@ -19,8 +27,8 @@
 		//border-radius: @soc_border_radius;
 		//padding: 6px;
 		@media @media-point-screen-lg {
-			width: @soc_size - 8;
-			height: @soc_size - 8;
+			//width: @soc_size - 8;
+			//height: @soc_size - 8;
 		}
 		&, &:focus{color: @soc_color;} 
 		svg{display: block;}

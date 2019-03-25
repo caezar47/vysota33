@@ -1,8 +1,8 @@
 //===== url =====//
 @url-site 					: 	'';
 @url-path 					: 	'/wp-content/themes/azbn7theme'; 
-//@url-path 				: 	'/tpl/';
-@url-path 					: 	'';
+@url-path 				: 	'/vysota33/';
+//@url-path 					: 	'';
 @url-path-css 				: 	'@{url-path}/css';
 @url-path-fonts 			: 	'@{url-path}/fonts';
 @url-path-img 				: 	'@{url-path}/img';
@@ -94,7 +94,7 @@
 @navbar_active_color 		:	@default;
 @navbar_active_border 		:	@success;
 
-@navbar_color_device 		:	@b-color;
+@navbar_color_device 		:	@white;
 @navbar_color_device_hover 	:	@primary;
 
 @navbar_collapse_bg 		:	@info;
@@ -105,10 +105,10 @@
 @navbar_humb_bg 			:	@primary;
 @navbar_humb_bg_active 		:	@primary;
 //= logotip
-@navbar_logo_color 			: 	@primary;
+@navbar_logo_color 			: 	@white;
 @navbar_logo_widht 			: 	120px;
 @navbar_logo_height 		: 	50px;
-@navbar_logo_device_widht 	: 	100px;
+@navbar_logo_device_widht 	: 	130px;
 @navbar_logo_device_height 	: 	42px;
 
 //= size
@@ -135,7 +135,7 @@
 
 //= logotip
 @footer_logo_color 			: 	@primary;
-@footer_logo_widht 			: 	120px;
+@footer_logo_widht 			: 	265px;
 @footer_logo_height 		: 	50px;
 
 //= size
@@ -203,15 +203,15 @@
 //=== input ===
 @input_label				: 	@default;
 @input_bg					:	@white;
-@input_height				:	50px;
+@input_height				:	55px;
 @input_height_textarea		:	145px;
 @input_radius				:	0px;
-@input_border_color			:	@success;
-@input_border_width			:	2px;
+@input_border_color			:	darken(@white, 5%);
+@input_border_width			:	3px;
 
 //= focus =
 @input_focus_bg				:	@white;
-@input_focus_border_color	:	@primary;
+@input_focus_border_color	:	@success;
 
 //== input text ==
 @input_t_color				:	@warning;
@@ -221,9 +221,9 @@
 @input_focus_t_color		:	@warning;
 
 //== placeholder ==
-@input_plh_color			:	@success;
-@input_plh_fs				:	@b-fs;
-@input_plh_lh				:	@b-lh;
+@input_plh_color			:	#9b9c9c;
+@input_plh_fs				:	@b-fs - 2;
+@input_plh_lh				:	@b-lh - 2;
 //= focus =
 @input_focus_plh_color		:	@b-color;
 
@@ -257,11 +257,11 @@
 @radio_bg_active 			: 	@b-color;
 
 //=== error ===
-@form_error_bg 				: 	@primary;
+@form_error_bg 				: 	@success;
 @form_error_bg_pass 		: 	@success;
 @form_error_bg_load 		: 	@default;
-@form_error_text_color 		: 	@white;
-@form_error_border_color 	: 	@primary;
+@form_error_text_color 		: 	@default;
+@form_error_border_color 	: 	@success;
 @form_error_border_width 	: 	0px;
 @form_error_fs 				: 	@b-fs - 6;
 @form_error_lh 				: 	@b-lh - 6;
@@ -400,18 +400,18 @@
 @modal_backdrop 			:	@default;
 @modal_backdrop_fade 		:	0.9;
 @modal_bg 					:	@white;
-@modal_border_rad 			:	5px;
-@modal_width 				:	500px;
+@modal_border_rad 			:	0px;
+@modal_width 				:	790px;
 @modal_width_device 		:	650px;
 @modal_btn_width 			: 	34px;
-@modal_btn_border_rad 		:	50%;
+@modal_btn_border_rad 		:	0%;
 @modal_btn_color 			:	@primary;
 @modal_btn_bg 				:	@modal_bg;
 @modal_btn_border 			:	2px;
-@modal_btn_border_color 	:	@primary;
+@modal_btn_border_color 	:	@white;
 @modal_btn_color_hover 		:	@white;
-@modal_btn_bg_hover 		:	@success;
-@modal_btn_border_color_hover:	@success;
+@modal_btn_bg_hover 		:	@default;
+@modal_btn_border_color_hover:	@default;
 //===== end's modals =====//
 
 //===== map =====//

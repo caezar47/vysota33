@@ -17,6 +17,7 @@
 			tpl="/src/block/site/default/header/panel.html"
 			block_prefix="header-block__"
 			block_heading="Покоряя новую высоту"
+			block_id="{{block.header}}"
 		]]	
 		[[azbntple  
 			tpl="/src/block/site/page/index-project.html"
@@ -87,6 +88,17 @@
 			block_heading="Паркинг"
 		]]
 		[[azbntple  
+			tpl="/src/block/site/page/index-structure.html"
+			content_prefix="content-block__"
+			content_mod="is--index-structure"
+			content_id="{{block.structure}}"
+
+			block_heading_mod="is--index-heading"
+			block_heading_level="h2"
+			block_heading_num="07"
+			block_heading="Структура центра"
+		]]
+		[[azbntple  
 			tpl="/src/block/site/page/index-shopping.html"
 			content_prefix="content-block__"
 			content_mod="is--index-shopping"
@@ -115,9 +127,8 @@
 			content_id="{{block.contacts}}"
 
 		]]
-
 		[[azbntple 
-			tpl="8/src/block/site/default/footer/footer.html"
+			tpl="/src/block/site/default/footer/footer.html"
 			footer_prefix="footer__" 
 		]]
 		[[azbntple tpl="/src/block/site/default/modals/include.html" ]]

@@ -1,33 +1,43 @@
 .footer__{
 	&block{
 		@media print{display: none;}
-		//position: relative;
+		position: relative;
 		//z-index: 1;
 		font-family: @footer_ff;
-		font-size: @footer_fs;
-		line-height: @footer_lh;
+		font-size: @footer_fs - 2;
+		line-height: @footer_lh - 2; 
 		font-weight: 400;
 		color: @footer_color;	
-		background: @footer_bg;
+		//background: @footer_bg;
 		overflow: hidden;
 		padding-top: 30px;
 		padding-bottom: 30px;
+		background-image: linear-gradient(86deg, #192f4d 0%, #0d8fc5 100%);
 		@media @media-point-screen {
-			font-size: @footer_fs - 2;
-			line-height: @footer_lh - 2; 
-			padding-top: 20px;
-			padding-bottom: 20px;
+			padding-top: 4vw;
+			padding-bottom: 2.6vw;
 		}
 		a,
 		a[href^="tel:"],
-		a[href^="maito:"],
+		a[href^="maito:"]{
+			color: @footer_color;
+		}
 		a:focus,
 		a[href^="tel:"]:focus,
 		a[href^="maito:"]:focus,
 		a:hover,
 		a[href^="tel:"]:hover,
 		a[href^="maito:"]:hover{
-			color: @footer_color;
+			//color: @success;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			top: 15px;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background-color: fadeout(@white, 50%);
 		}
 	}
 	&container{
@@ -36,28 +46,124 @@
 		}
 	}
 	&row{
-		justify-content: space-between;
-		align-items: center;
-		margin-top: -15px;
-		@media @media-point-device{flex-wrap: wrap;}
-	}
-	&cols{
-		padding-top: 15px;
-		@media @media-point-xxs {
-			.makeCols(12, 12);
+		grid-template-columns: 1fr;
+		@media @media-point-xs {
+			grid-template-columns: 1fr 1fr;
 		}
-		&.is--copyright{
-			@media @media-point-device {
-				display: none; 
+		@media @media-point-notsmart {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		.grid__cols{
+			&:nth-child(1){
+				@media @media-point-xs {
+					grid-column: span 2;
+				}
+			}
+			&:nth-child(2){
+				@media @media-point-smart {
+					//display: none;
+				}
+				@media @media-point-screen {
+					padding-top: 30px;
+				}
+			}
+			&.is--full{
+				justify-self: center;
+				text-align: center;
+				@media @media-point-xs {
+					grid-column: span 2;					
+				}
+				@media @media-point-notsmart {
+					grid-column: span 3;
+				}
+				@media @media-point-screen {
+					padding-top: 20px;
+				}
 			}
 		}
 	}
+	&link{		
+		.hover-line(fadeout(@white, 50%));
+		&::after{
+			bottom: -5px;
+		}
+	}
 	&logotip{
-		display: block;
-		max-width: @footer_logo_widht;
-		height: @footer_logo_height;
+		display: inline-block;
+		max-width: @footer_logo_widht - 100;
+		//height: @footer_logo_height;
+		margin-bottom: 15px;
+		@media @media-point-screen {
+			margin-bottom: 1.9vw;
+			max-width: @footer_logo_widht;
+		}
 		a&, a&:focus, a&:hover{
 			color: @footer_logo_color;
+		}
+	}
+	&text{
+		p,div{
+			margin-bottom: 15px;
+		}
+		a{
+			font-weight: 700;
+			&:hover{color: @success;}
+		}
+		@media @media-point-screen {
+			max-width: 230px;
+		}
+	}
+	&nav{
+		&{
+			list-style: none;
+			margin: 0 auto;
+			padding: 0;
+			@media @media-point-notsmart {
+				max-width: 270px;
+			}
+		}
+		&-item{
+			@media @media-point-smart {
+				margin-bottom: 5px;
+			}
+			&.is--heading{
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: @b-fs + 2;
+				line-height: @b-lh + 4;
+				margin-bottom: 15px;
+			}
+		}
+		&-link{
+			position: relative;
+			display: inline-block;
+			font-weight: 700;
+			padding-top: 4px;
+			padding-bottom: 4px;
+			padding-right: 25px;
+			&::after{
+				content: '';
+				position: absolute;
+				z-index: 1;
+				bottom: 0px;
+				left: 0;
+				right: 0;
+				height: 3px;
+				background-color: @success;
+				transform-origin: right;
+				transition: transform @trs-option;
+				transform: scale(0, 1);			
+			}
+			&:hover,
+			.footer__nav-item.is--active &{
+				color: @default;
+				background-color: @white;
+				padding: 4px 25px;
+				&::after{
+					transform-origin: left;
+					transform: scale(1, 1);
+				}
+			}
 		}
 	}
 }
