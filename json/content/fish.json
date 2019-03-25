@@ -24,23 +24,23 @@
 		"inst":"https://www.instagram.com/"
 	},
 	"page":{
-		"index":"/",
-		"about":"/about.html",
-		"articles":"/articles.html",
-		"articles_card":"/articles-card.html",
-		"action":"/action.html",
-		"action_card":"/action-card.html",
-		"services":"/services.html",
-		"services_card":"/services-card.html",
-		"price":"/price.html",
-		"portfolio":"/portfolio.html",
-		"portfolio_card":"/portfolio-card.html",
-		"reviews":"/reviews.html",
-		"contacts":"/contacts.html",
-		"404":"/404.html",
-		"sitemap":"/sitemap.html",
-		"style":"/style.html",
-		"agreement":"/agreement.html"
+		"index":"/vysota33/",
+		"about":"/vysota33/about.html",
+		"articles":"/vysota33/articles.html",
+		"articles_card":"/vysota33/articles-card.html",
+		"action":"/vysota33/action.html",
+		"action_card":"/vysota33/action-card.html",
+		"services":"/vysota33/services.html",
+		"services_card":"/vysota33/services-card.html",
+		"price":"/vysota33/price.html",
+		"portfolio":"/vysota33/portfolio.html",
+		"portfolio_card":"/vysota33/portfolio-card.html",
+		"reviews":"/vysota33/reviews.html",
+		"contacts":"/vysota33/contacts.html",
+		"404":"/vysota33/404.html",
+		"sitemap":"/vysota33/sitemap.html",
+		"style":"/vysota33/style.html",
+		"agreement":"/vysota33/agreement.html"
 	},
 	"block":{
 		"diff":"-56",
@@ -56,10 +56,10 @@
 		"progress":"block-progress",
 		"contacts":"block-contacts"
 	},	                           
-	"url-path-css":"/css",
-	"url-path-img":"/img",
-	"url-path-js":"/js",
-	"url-path-plugins":"/plugins",
-	"url-path-favicon":"/favicon",
-	"url-path-docs":"/docs"
+	"url-path-css":"/vysota33/css",
+	"url-path-img":"/vysota33/img",
+	"url-path-js":"/vysota33/js",
+	"url-path-plugins":"/vysota33/plugins",
+	"url-path-favicon":"/vysota33/favicon",
+	"url-path-docs":"/vysota33/docs"
 }
