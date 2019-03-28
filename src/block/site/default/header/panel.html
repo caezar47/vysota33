@@ -1,10 +1,15 @@
-<header class="{{block_prefix}}block" id="{{block_id}}">
-	<div class="{{block_prefix}}slick" data-slider-slick="slick-header">
-		<div class="{{block_prefix}}slick-item">
-			<img src="{{url-path-img}}/temp/bg-block-header.jpg" class="img-responsive" alt="">
-		</div>
-	</div>
+<header class="{{block_prefix}}block" id="{{block_id}}" style="background-image: url({{url-path-img}}/temp/bg-block-header.jpg)">
+	
 	<div class="{{block_prefix}}container container">
+		<div class="{{block_prefix}}btn">			
+			[[azbntple 
+				tpl="/src/block/site/default/button/btn-modal.html"
+				button_prefix="btn__" 
+				button_mod="is--invers"
+				button_target="modal-order"
+				button_name="Оставить заявку" 
+			]]
+		</div>
 		<div class="{{block_prefix}}logotip"><img src="{{url-path-img}}/default/logotip.png" alt=""></div>
 		<h1 class="{{block_prefix}}heading">{{block_heading}}</h1>
 		<div class="{{block_prefix}}row  grid__row">
@@ -26,7 +31,7 @@
 					block_mod="is--header"
 					block_preview="icon-adv"
 					block_count="02"
-					block_val="17.7 <small>тыс. м<sup>2</sup></small>"
+					block_val="17.7 <small>тыс.&nbsp;м<sup>2</sup></small>"
 					block_heading="Общая площадь помещений"
 				]] 
 			</div>

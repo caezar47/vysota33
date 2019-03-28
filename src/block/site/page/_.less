@@ -182,7 +182,7 @@
 		//block		
 		&.is--index-project{
 			position: relative;
-			padding: 15px;
+			padding: 10px;
 			max-width: 650px;
 			border-left: 3px solid @primary;
 			border-bottom: 3px solid @primary;
@@ -203,6 +203,13 @@
 				right: 0px;
 				width: 3px;
 				height: 5%;
+			}
+			@media @media-point-smart {
+				font-size: @b-fs - 2;
+				line-height: @b-lh - 4;
+				h5{
+					margin-bottom: 15px;
+				}
 			}
 			@media @media-point-notsmart {
 				padding: 30px 30px 30px 23px;
@@ -244,7 +251,7 @@
 		&.is--index-apartments{
 			background-color: fadeout(#1b1f3a, 20%);
 			color: @white;
-			padding: 20px 25px;
+			padding: 20px 15px;
 			font-weight: 700;
 			@media @media-point-notsmart {
 				max-width: 520px;
@@ -258,7 +265,7 @@
 		&.is--index-premises{
 			background-color: fadeout(#1b1f3a, 20%);
 			color: @white;
-			padding: 20px 25px;
+			padding: 20px 15px;
 			font-weight: 700;
 			margin-left: auto;
 			@media @media-point-notsmart {
@@ -274,7 +281,7 @@
 			background-color: fadeout(#1b1f3a, 20%);
 			color: @white;
 			font-weight: 700;
-			padding: 25px;
+			padding: 25px 15px;
 			position: absolute;
 			top: 0;
 			left: 0;
