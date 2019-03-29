@@ -4,6 +4,7 @@ $(function() {
 	var shopping = $('[data-slider-slick="slick-shopping"]');		
 	var progress = $('[data-slider-slick="slick-progress"]');		
 	var gallery = $('[data-slider-slick="slick-gallery"]');		
+	var adv = $('[data-slider-slick="slick-adv"]');		
 	var CMS__TPL_PATH = '/wp-content/themes/azbn7theme';  
 	//var CMS__TPL_PATH = '/tpl';  
 	var CMS__TPL_PATH = '';  
@@ -59,6 +60,15 @@ $(function() {
 				}
 		    }
 		]
+	});
+	adv.slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: true,
+		infinite: true,
+		prevArrow: prevArrow,
+		nextArrow: nextArrow,
 	});
 	progress.slick({
 		slidesToShow: 3,
@@ -123,4 +133,7 @@ $(function() {
 	$('.slick-cloned .content-block__preview').removeAttr('data-fancybox');
 	$('.slick-cloned .card-item__preview').removeAttr('data-fancybox');
 	$('.slick-cloned .card-item__fancy').removeAttr('data-fancybox');
+	if(screenJS.notsmart()){
+		adv.slick('unslick');
+	}
 }); 

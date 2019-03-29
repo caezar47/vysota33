@@ -13,6 +13,9 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 		background-image: linear-gradient(86deg, #192f4d 0%, #0d8fc5 100%);
+		@media @media-point-smart {
+			padding-top: 0;
+		}
 		@media @media-point-screen {
 			padding-top: 4vw;
 			padding-bottom: 2.6vw;
@@ -30,14 +33,16 @@
 		a[href^="maito:"]:hover{
 			//color: @success;
 		}
-		&::before{
-			content: '';
-			position: absolute;
-			top: 15px;
-			left: 0;
-			width: 100%;
-			height: 3px;
-			background-color: fadeout(@white, 50%);
+		@media @media-point-notsmart {			
+			&::before{
+				content: '';
+				position: absolute;
+				top: 15px;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background-color: fadeout(@white, 50%);
+			}
 		}
 	}
 	&container{
@@ -47,32 +52,24 @@
 	}
 	&row{
 		grid-template-columns: 1fr;
-		@media @media-point-xs {
-			grid-template-columns: 1fr 1fr;
-		}
 		@media @media-point-notsmart {
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 		.grid__cols{
-			&:nth-child(1){
-				@media @media-point-xs {
-					grid-column: span 2;
-				}
+			display: none;
+			@media @media-point-notsmart {
+				display: block;
 			}
 			&:nth-child(2){
-				@media @media-point-smart {
-					//display: none;
-				}
+				display: block;
 				@media @media-point-screen {
 					padding-top: 30px;
 				}
 			}
 			&.is--full{
+				display: block;
 				justify-self: center;
 				text-align: center;
-				@media @media-point-xs {
-					grid-column: span 2;					
-				}
 				@media @media-point-notsmart {
 					grid-column: span 3;
 				}
@@ -118,13 +115,17 @@
 			list-style: none;
 			margin: 0 auto;
 			padding: 0;
+			@media @media-point-smart {
+				margin-left: -15px;
+				margin-right: -15px;
+			}
 			@media @media-point-notsmart {
 				max-width: 270px;
 			}
 		}
 		&-item{
 			@media @media-point-smart {
-				margin-bottom: 5px;
+				border-bottom: 1px solid fadeout(@white, 50%);
 			}
 			&.is--heading{
 				text-transform: uppercase;
@@ -132,6 +133,9 @@
 				font-size: @b-fs + 2;
 				line-height: @b-lh + 4;
 				margin-bottom: 15px;
+				@media @media-point-smart {
+					display: none;
+				}
 			}
 		}
 		&-link{
@@ -162,6 +166,29 @@
 				&::after{
 					transform-origin: left;
 					transform: scale(1, 1);
+				}
+			}
+			@media @media-point-smart {
+				display: block;
+				padding: 10px 15px 10px 35px;
+				&::before{
+					content: '';
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 15px;
+					width: 6px;
+					height: 6px;
+					background-color: @white;
+					border-radius: 50%;
+					transition: @trs-site;
+				}
+				&:hover,
+				.footer__nav-item.is--active &{
+					padding: 10px 15px 10px 35px;
+					&::before{
+						background-color: @success;
+					}
 				}
 			}
 		}

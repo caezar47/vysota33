@@ -55,6 +55,11 @@ function fecss_ScreenJS() {
 			'portrait' : [],
 			'landscape' : [],
 		},
+		'notsmart' : {
+			'default' : [],
+			'portrait' : [],
+			'landscape' : [],
+		},
 		'screenLG' : {
 			'default' : [],
 			'portrait' : [],
@@ -104,6 +109,9 @@ function fecss_ScreenJS() {
 	ctrl.pc = function() {
 		return (ctrl.screen.w > 1024);
 	};
+	ctrl.notsmart = function() {
+		return (ctrl.screen.w > 767);
+	};
 	
 	ctrl.screenIs = function() {
 		var result = 'noname';
@@ -133,6 +141,9 @@ function fecss_ScreenJS() {
 		}else
 		if(ctrl.pc()) {
 			result = 'pc';
+		}else
+		if(ctrl.notsmart()) {
+			result = 'notsmart';
 		}else
 		if(ctrl.deviceLg()) {
 			result = 'deviceLg';
@@ -219,6 +230,7 @@ $(window).on('resize', function(){
 screenJS.is(xs/sm/md/lg/portrait/landscape) - да/нет
 
 screenJS.isXS() - да/нет
+screenJS.notsmart() - да/нет
 screenJS.device() - да/нет
 screenJS.isSM() - да/нет
 screenJS.isMD() - да/нет
